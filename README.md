@@ -126,6 +126,7 @@ To execute the SLAM system
 Move to MonoGS directory if not already ```cd MonoGS```.
 
 To start the system
+
  ```python slam.py --config configs/live/ROS.yaml```
 
 ### ⚠️ Note
