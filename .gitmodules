@@ -1,0 +1,3 @@
+[submodule "MonoGS"]
+	path = MonoGS
+	url = https://github.com/jagennath-hari/MonoGS
