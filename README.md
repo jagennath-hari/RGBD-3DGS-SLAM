@@ -139,3 +139,7 @@ If you found this code/work to be useful in your own research, please considerin
     booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
     year={2024}
 }
+```
+
+## License
+This software is released under BSD-3-Clause license. You can view a license summary [here](LICENSE).
