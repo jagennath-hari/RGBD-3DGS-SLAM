@@ -118,6 +118,8 @@ If you found this code/work to be useful in your own research, please considerin
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2024}
 }
+```
+```bibtex
 @inproceedings{piccinelli2024unidepth,
     title={UniDepth: Universal Monocular Metric Depth Estimation},
     author = {Piccinelli, Luigi and Yang, Yung-Hsu and Sakaridis, Christos and Segu, Mattia and Li, Siyuan and Van Gool, Luc and Yu, Fisher},
