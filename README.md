@@ -80,7 +80,7 @@ ROS_topics:
   depth_topic: '/zed2i/zed_node/depth/depth_registered'
   depth_scale: 1
 ```
-2) A Calibrated camera but do no have depth maps.
+2) A Calibrated camera but do not have depth maps.
 ```
 ROS_topics:
   camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
