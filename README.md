@@ -45,5 +45,5 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
   <img src="assets/MonoGS_UniDepthV2_result.png" width="400" height="350" alt="MonoGS with UniDepthV2 Result" />
 </p>
 <p align="center">
-  <i>Original MonoGS Result</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>MonoGS with UniDepthV2 Result</i>
+  <i>Original MonoGS Result</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>MonoGS with UniDepthV2 Result</i>
 </p>
