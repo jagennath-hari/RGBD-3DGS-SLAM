@@ -108,3 +108,14 @@ ROS_topics:
 During operation the system will output two topics:
 1) /monoGS/cloud (sensor_msgs/PointCloud2)
 2) /monoGS/trajectory (nav_msgs/Path)
+
+## 📖 Citation
+If you found this code/work to be useful in your own research, please considering citing the following:
+```
+@inproceedings{Matsuki:Murai:etal:CVPR2024,
+  title={{G}aussian {S}platting {SLAM}},
+  author={Hidenobu Matsuki and Riku Murai and Paul H. J. Kelly and Andrew J. Davison},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
+```
