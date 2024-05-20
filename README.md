@@ -23,6 +23,7 @@ cd MonoGS && bash scripts/download_tum.sh
 ```
 
 ## ⌛️ Running SLAM on TUM
+```cd MonoGS``` Move to this directory.
 ### TUM office
 You can run the system on the TUM dataset using the same method from the [original repository](https://github.com/muskie82/MonoGS).
 
@@ -97,6 +98,11 @@ ROS_topics:
   depth_scale: 1
 ```
 [UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will can estimate both camera intresnics and metric depth map. So an RGB-D Image will be produced regardless.
+
+To execute the SLAM system
+Move to MonoGS directory if not already ```cd MonoGS```.
+
+Use ```python slam.py --config configs/live/ROS.yaml``` to start the system.
 
 ### Real-Time ROS 2 output Viewer and in RVIZ 2
 <div align="center">
