@@ -40,7 +40,7 @@ python slam.py --config configs/mono/tum/fr3_office.yaml
 ```
 
 #### RGB-D mode without using the ground truth data
-The code has been refactored to not use the ground truth depth but the depth from UniDepthV2 instead. It can be executed similary provided by [original repository](https://github.com/muskie82/MonoGS). A new directory called `neural_depth` will get created and new depth maps from UniDepthV2 will be available in it. 
+The code has been refactored to not use the ground truth depth but the depth from UniDepthV2 instead. It can be executed similary provided by [original repository](https://github.com/muskie82/MonoGS). A new directory called `neural_depth` will get created and new Depth Maps from UniDepthV2 will be available in it. 
 
 ```
 python slam.py --config configs/rgbd/tum/fr3_office.yaml
@@ -96,7 +96,7 @@ ROS_topics:
 The `camera topic` is mandatory, but `camera_info_topic` and `depth_topic` are optional.
 
 The other combinations are
-1) An uncalibrated camera but have depth maps.
+1) An uncalibrated camera with Depth Maps.
 ```
 ROS_topics:
   camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
@@ -104,7 +104,7 @@ ROS_topics:
   depth_topic: '/zed2i/zed_node/depth/depth_registered'
   depth_scale: 1
 ```
-2) A Calibrated camera but do not have depth maps.
+2) A calibrated camera without Depth Maps.
 ```
 ROS_topics:
   camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
@@ -112,7 +112,7 @@ ROS_topics:
   depth_topic: 'None'
   depth_scale: 1
 ```
-3) An uncalibrated camera without depth maps.
+3) An uncalibrated camera without Depth Maps.
 ```
 ROS_topics:
   camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
@@ -120,7 +120,7 @@ ROS_topics:
   depth_topic: 'None'
   depth_scale: 1
 ```
-[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will estimate both camera intresnics and metric depth map. So an RGB-D Image will be produced regardless.
+[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will estimate both camera intrensics and metric Depth Map. So an RGB-D Image will be produced regardless.
 
 To execute the SLAM system
 Move to MonoGS directory if not already ```cd MonoGS```.
