@@ -127,7 +127,9 @@ Move to MonoGS directory if not already ```cd MonoGS```.
 
 To start the system
 
- ```python slam.py --config configs/live/ROS.yaml```
+```
+python slam.py --config configs/live/ROS.yaml
+```
 
 ### ⚠️ Note
 Depth Maps can be of different scales, make sure to set the depth scale in the ROS topics infos.
