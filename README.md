@@ -40,7 +40,7 @@ python slam.py --config configs/mono/tum/fr3_office.yaml
 ```
 
 #### RGB-D mode without using the ground truth data
-The code has been refactored to not use the ground truth depth but the depth from UniDepthV2 instead. It can be run similary provided by [original repository](https://github.com/muskie82/MonoGS). A new directory call `neural_depth` will get created and new depth will be available in it. 
+The code has been refactored to not use the ground truth depth but the depth from UniDepthV2 instead. It can be executed similary provided by [original repository](https://github.com/muskie82/MonoGS). A new directory called `neural_depth` will get created and new depth maps from UniDepthV2 will be available in it. 
 
 ```
 python slam.py --config configs/rgbd/tum/fr3_office.yaml
@@ -65,9 +65,9 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
 
 
 ## 📈 Running Real-Time using ROS 2
-To run using any camera you can leverage ROS 2 publisher-subscriber protocol. A new config file `MonoGS/configs/live/ROS.yaml` will allow you to use ROS 2.
+To run using any camera you can leverage ROS 2 publisher-subscriber (DDS) protocol. A new config file `MonoGS/configs/live/ROS.yaml` will allow you to use ROS 2.
 
-You can change the topic names in file. An example given below.
+You can change the topic names in the config file. An example given below.
 
 ```
 ROS_topics:
@@ -104,12 +104,15 @@ ROS_topics:
   depth_topic: 'None'
   depth_scale: 1
 ```
-[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will can estimate both camera intresnics and metric depth map. So an RGB-D Image will be produced regardless.
+[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will estimate both camera intresnics and metric depth map. So an RGB-D Image will be produced regardless.
 
 To execute the SLAM system
 Move to MonoGS directory if not already ```cd MonoGS```.
 
 Use ```python slam.py --config configs/live/ROS.yaml``` to start the system.
+
+### ⚠️ Note
+Depth Maps can be of different scales, make sure to set the depth scale in the ROS topics infos.
 
 ### Real-Time ROS 2 output Viewer and in RVIZ 2
 <div align="center">
@@ -118,7 +121,7 @@ Use ```python slam.py --config configs/live/ROS.yaml``` to start the system.
 </div>
 
 #### ROS 2 message outputs
-During operation the system will output two topics:
+During operation the system will output two topics when a new keyframe is created:
 1) /monoGS/cloud (sensor_msgs/PointCloud2)
 2) /monoGS/trajectory (nav_msgs/Path)
 
