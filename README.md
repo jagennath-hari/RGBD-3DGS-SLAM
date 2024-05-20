@@ -125,7 +125,8 @@ ROS_topics:
 To execute the SLAM system
 Move to MonoGS directory if not already ```cd MonoGS```.
 
-Use ```python slam.py --config configs/live/ROS.yaml``` to start the system.
+To start the system
+ ```python slam.py --config configs/live/ROS.yaml```
 
 ### ⚠️ Note
 Depth Maps can be of different scales, make sure to set the depth scale in the ROS topics infos.
