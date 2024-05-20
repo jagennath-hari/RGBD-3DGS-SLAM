@@ -2,7 +2,7 @@
 RGBD-3DGS-SLAM is a monocular SLAM system leveraging 3D Gaussian Splatting (3DGS) for accurate point cloud and visual odometry estimation. By integrating neural networks, it estimates depth and camera intrinsics from RGB images alone, with optional support for additional camera information and depth maps. The system outputs high-quality Point Cloud and Visual Odometry, making it versatile for various robotic and computer vision applications.
 
 <div align="center">
-    <img src="assets/TUM_ROS.png" alt="SLAM" width="700"/>
+    <img src="assets/TUM_ROS.png" alt="SLAM" width="800"/>
     <p>MonoGS with UniDepthV2 and ROS 2</p>
 </div>
 
@@ -100,7 +100,7 @@ ROS_topics:
 
 ### Real-Time ROS 2 output Viewer and in RVIZ 2
 <div align="center">
-    <img src="assets/real_time_ROS.png" alt="SLAM" width="700"/>
+    <img src="assets/real_time_ROS.png" alt="SLAM" width="800"/>
     <p>MonoGS with UniDepthV2 and ROS 2</p>
 </div>
 
