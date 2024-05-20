@@ -51,12 +51,12 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
 <table>
   <tr>
     <td align="center">
-      <img src="assets/ground_truth_depth.png" width="400" height="350" alt="Original MonoGS Result" />
+      <img src="assets/ground_truth_depth.png" width="400" height="350" alt="Ground truth Depth Map from TUM dataset" />
       <br>
       <i>Ground truth Depth Map from TUM dataset</i>
     </td>
     <td align="center">
-      <img src="assets/neural_depth.png" width="400" height="350" alt="MonoGS with UniDepthV2 Result" />
+      <img src="assets/neural_depth.png" width="400" height="350" alt="Neural Depth Map produced by UniDepthV2" />
       <br>
       <i>Neural Depth Map produced by UniDepthV2</i>
     </td>
