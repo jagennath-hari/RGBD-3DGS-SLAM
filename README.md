@@ -55,3 +55,56 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
   </tr>
 </table>
 
+
+## 📈 Running Real-Time using ROS 2
+To run using any camera you can leverage ROS 2 publisher-subscriber protocol. A new config file `MonoGS/configs/live/ROS.yaml` will allow you to use ROS 2.
+
+You can change the topic names in file. An example given below.
+
+```
+ROS_topics:
+  camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
+  camera_info_topic: '/zed2i/zed_node/rgb/camera_info'
+  depth_topic: '/zed2i/zed_node/depth/depth_registered'
+  depth_scale: 1
+```
+
+The `camera topic` is mandatory, but `camera_info_topic` and `depth_topic` are optional.
+
+The other combinations are
+1) An uncalibrated camera but have depth maps.
+```
+ROS_topics:
+  camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
+  camera_info_topic: 'None'
+  depth_topic: '/zed2i/zed_node/depth/depth_registered'
+  depth_scale: 1
+```
+2) A Calibrated camera but do no have depth maps.
+```
+ROS_topics:
+  camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
+  camera_info_topic: '/zed2i/zed_node/rgb/camera_info'
+  depth_topic: 'None'
+  depth_scale: 1
+```
+3) An uncalibrated camera without depth maps.
+```
+ROS_topics:
+  camera_topic: '/zed2i/zed_node/rgb/image_rect_color'
+  camera_info_topic: 'None'
+  depth_topic: 'None'
+  depth_scale: 1
+```
+[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will can estimate both camera intresnics and metric depth map. So an RGB-D Image will be produced regardless.
+
+### Real-Time ROS 2 output Viewer and in RVIZ 2
+<div align="center">
+    <img src="assets/real_time_ROS.png" alt="SLAM" width="700"/>
+    <p>MonoGS with UniDepthV2 and ROS 2</p>
+</div>
+
+#### ROS 2 message outputs
+During operation the system will output two topics:
+1) /monoGS/cloud (sensor_msgs/PointCloud2)
+2) /monoGS/trajectory (nav_msgs/Path)
