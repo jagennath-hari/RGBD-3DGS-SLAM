@@ -41,10 +41,10 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
 ##### Comparison
 
 <p float="center">
-  <img src="assets/original_MonoGS_result.png" width="400" height="350" />
+  <img src="assets/original_MonoGS_result.png" width="300" height="350" />
   <br>
   <i>Original MonoGS Result</i>
-  <img src="assets/MonoGS_UniDepthV2_result.png" width="400" height="350" />
+  <img src="assets/MonoGS_UniDepthV2_result.png" width="300" height="350" />
   <br>
   <i>MonoGS with UniDepthV2 Result</i>
 </p>
