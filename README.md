@@ -22,7 +22,7 @@ conda env create -f environment.yml
 cd MonoGS && bash scripts/download_tum.sh
 ```
 
-## ⌛️ Running SLAM
+## ⌛️ Running SLAM on TUM
 ### TUM office
 You can run the system on the TUM dataset using the same method from the [original repository](https://github.com/muskie82/MonoGS).
 
