@@ -30,3 +30,22 @@ You can run the system on the TUM dataset using the same method from the [origin
 ```
 python slam.py --config configs/mono/tum/fr3_office.yaml
 ```
+
+#### RGB-D mode without using the ground truth data
+The code has been refactored to not use the ground truth depth but the depth from UniDepthV2 instead. It can be run similary provided by [original repository](https://github.com/muskie82/MonoGS). A new directory call `neural_depth` will get created and new depth will be available in it. 
+
+```
+python slam.py --config configs/rgbd/tum/fr3_office.yaml
+```
+
+##### Comparison
+
+<p float="center">
+  <img src="assets/original_MonoGS_result.png" width="400" height="350" />
+  <br>
+  <i>Original MonoGS Result</i>
+  <img src="assets/MonoGS_UniDepthV2_result.png" width="400" height="350" />
+  <br>
+  <i>MonoGS with UniDepthV2 Result</i>
+</p>
+
