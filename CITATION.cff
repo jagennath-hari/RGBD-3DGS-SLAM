@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Hari"
+  given-names: "Jagennath"
+title: "RGBD-3DGS-SLAM"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2024-05-20
+url: "https://github.com/jagennath-hari/RGBD-3DGS-SLAM"
