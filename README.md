@@ -165,7 +165,7 @@ If you found this code/work to be useful in your own research, please considerin
 ```
 
 ## 🪪 License
-This software is released under BSD-3-Clause license. You can view a license summary [here](LICENSE). ([MonoGS](https://github.com/muskie82/MonoGS)) and ([UniDepth](https://github.com/lpiccinelli-eth/UniDepth)) have their own licenses respectively.
+This software is released under BSD-3-Clause license. You can view a license summary [here](LICENSE). [MonoGS](https://github.com/muskie82/MonoGS) and [UniDepth](https://github.com/lpiccinelli-eth/UniDepth) have their own licenses respectively.
 
 ## 🙏 Acknowledgement
 This work incorporates many open-source codes.
