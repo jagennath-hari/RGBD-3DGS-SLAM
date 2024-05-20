@@ -111,11 +111,10 @@ During operation the system will output two topics:
 
 ## 📖 Citation
 If you found this code/work to be useful in your own research, please considering citing the following:
-```
+```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
   title={{G}aussian {S}platting {SLAM}},
   author={Hidenobu Matsuki and Riku Murai and Paul H. J. Kelly and Andrew J. Davison},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2024}
 }
-```
