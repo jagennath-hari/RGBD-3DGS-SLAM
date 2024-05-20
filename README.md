@@ -141,5 +141,17 @@ If you found this code/work to be useful in your own research, please considerin
 }
 ```
 
-## License
+## 🪪 License
 This software is released under BSD-3-Clause license. You can view a license summary [here](LICENSE).
+
+## 🙏 Acknowledgement
+This work incorporates many open-source codes. We extend our gratitude to the authors of the software.
+- [Gaussian Splatting SLAM](https://github.com/muskie82/MonoGS)
+- [UniDepth: Universal Monocular Metric Depth Estimation](https://github.com/lpiccinelli-eth/UniDepth)
+- [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
+- [Differential Gaussian Rasterization
+](https://github.com/graphdeco-inria/diff-gaussian-rasterization)
+- [SIBR_viewers](https://gitlab.inria.fr/sibr/sibr_core)
+- [Tiny Gaussian Splatting Viewer](https://github.com/limacv/GaussianSplattingViewer)
+- [Open3D](https://github.com/isl-org/Open3D)
+- [Point-SLAM](https://github.com/eriksandstroem/Point-SLAM)
