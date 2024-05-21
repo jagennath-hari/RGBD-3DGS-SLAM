@@ -96,6 +96,24 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
     <p>Final Cloud in RVIZ 2</p>
 </div>
 
+##### Cloud Viewer
+An online [Guassian Viewer](https://antimatter15.com/splat/) can be used to view the cloud in the `result` directory.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/MonoGS_TUM_orginal_cloud.gif" width="400" height="350" alt="Original MonoGS Cloud" />
+      <br>
+      <i>Original MonoGS Cloud</i>
+    </td>
+    <td align="center">
+      <img src="assets/MonoGS_UniDepthV2_TUM_cloud.gif" width="400" height="350" alt="MonoGS with UniDepthV2 Cloud" />
+      <br>
+      <i>MonoGS with UniDepthV2 Cloud</i>
+    </td>
+  </tr>
+</table>
+
 
 ## 📈 Running Real-Time using ROS 2
 To run using any camera you can leverage ROS 2 publisher-subscriber (DDS) protocol. A new config file `MonoGS/configs/live/ROS.yaml` will allow you to use ROS 2.
