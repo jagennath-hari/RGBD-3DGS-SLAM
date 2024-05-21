@@ -215,3 +215,4 @@ This work incorporates many open-source codes.
 - [Tiny Gaussian Splatting Viewer](https://github.com/limacv/GaussianSplattingViewer)
 - [Open3D](https://github.com/isl-org/Open3D)
 - [Point-SLAM](https://github.com/eriksandstroem/Point-SLAM)
+- [splat](https://github.com/antimatter15/splat)
