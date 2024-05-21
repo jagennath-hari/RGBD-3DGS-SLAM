@@ -146,6 +146,8 @@ python slam.py --config configs/live/ROS.yaml
 ### ⚠️ Note
 Depth Maps can be of different scales, make sure to set the depth scale in the ROS topics infos.
 
+UniDepthV2 is not perfect and the estimated intrensics and Depth Maps may not be accurate, it is advised to use a calibrated camera and use Depth Maps if available.
+
 ### Real-Time ROS 2 output Viewer and in RVIZ 2
 <div align="center">
     <img src="assets/real_time_ROS.png" alt="SLAM" width="800"/>
