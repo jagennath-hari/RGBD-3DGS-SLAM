@@ -3,7 +3,7 @@ RGBD-3DGS-SLAM is a monocular SLAM system leveraging 3D Gaussian Splatting (3DGS
 
 <div align="center">
     <img src="assets/monGS_UniDepthV2.gif" alt="Real-Time MonoGS UniDepthV2 ROS 2" width="800"/>
-    <p>Real-Time MonoGS UniDepthV2 ROS 2</p>
+    <p>Real-Time MonoGS with UniDepthV2 for Depth and camera intrensics with ROS 2</p>
 </div>
 
 <div align="center">
