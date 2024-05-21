@@ -86,6 +86,12 @@ python slam.py --config configs/rgbd/tum/fr3_office.yaml
 </table>
 
 
+<div align="center">
+    <img src="assets/monoGS_rviz.png" alt="monoGS_rviz" width="800"/>
+    <p>Final Cloud in RVIZ 2</p>
+</div>
+
+
 ## 📈 Running Real-Time using ROS 2
 To run using any camera you can leverage ROS 2 publisher-subscriber (DDS) protocol. A new config file `MonoGS/configs/live/ROS.yaml` will allow you to use ROS 2.
 
