@@ -11,8 +11,13 @@ RGBD-3DGS-SLAM is a monocular SLAM system leveraging 3D Gaussian Splatting (3DGS
 Clone the repo and the submodules using 
 ```
 https://github.com/jagennath-hari/RGBD-3DGS-SLAM --recursive
+```
+
+Install the packages using
+```
 cd RGBD-3DGS-SLAM && chmod +x install.sh && source ./install.sh
 ```
+
 Or build from source using these libraries.
 
 1) PyTorch ([Official Link](https://pytorch.org/)).
