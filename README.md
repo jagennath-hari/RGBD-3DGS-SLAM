@@ -3,7 +3,7 @@ RGBD-3DGS-SLAM is a sophisticated SLAM system that employs 3D Gaussian Splatting
 
 <div align="center">
     <img src="assets/monGS_UniDepthV2.gif" alt="Real-Time MonoGS UniDepthV2 ROS 2" width="800"/>
-    <p>Real-Time MonoGS with UniDepthV2 for Depth and camera intrensics with ROS 2</p>
+    <p>Real-Time MonoGS with UniDepthV2 for Depth and camera intrinsics with ROS 2</p>
 </div>
 
 <div align="center">
@@ -155,7 +155,7 @@ ROS_topics:
   depth_topic: 'None'
   depth_scale: 1
 ```
-[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will estimate both camera intrensics and metric Depth Map. So an RGB-D Image will be produced regardless.
+[UniDepthV2](https://github.com/lpiccinelli-eth/UniDepth) will estimate both camera intrinsics and metric Depth Map. So an RGB-D Image will be produced regardless.
 
 To execute the SLAM system
 Move to MonoGS directory if not already ```cd MonoGS```.
@@ -169,7 +169,7 @@ python slam.py --config configs/live/ROS.yaml
 ### ⚠️ Note
 Depth Maps can be of different scales, make sure to set the depth scale in the ROS topics infos.
 
-UniDepthV2 is not perfect and the estimated intrensics and Depth Maps may not be accurate, it is advised to use a calibrated camera and use Depth Maps if available.
+UniDepthV2 is not perfect and the estimated intrinsics and Depth Maps may not be accurate, it is advised to use a calibrated camera and use Depth Maps if available.
 
 ### Real-Time ROS 2 output Viewer and in RVIZ 2
 <div align="center">
