@@ -40,6 +40,8 @@ conda env create -f environment.yml
 cd MonoGS && bash scripts/download_tum.sh
 ```
 
+*Tested on Ubuntu 22.04 and PyTorch 2.3*
+
 ## ⌛️ Running SLAM on TUM
 ```cd MonoGS``` Move to this directory.
 ### TUM office
