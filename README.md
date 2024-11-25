@@ -15,7 +15,7 @@ RGBD-3DGS-SLAM is a sophisticated SLAM system that employs 3D Gaussian Splatting
 
 Clone the repo and the submodules using 
 ```
-https://github.com/jagennath-hari/RGBD-3DGS-SLAM --recursive
+git clone https://github.com/jagennath-hari/RGBD-3DGS-SLAM --recursive
 ```
 
 Install the packages using
